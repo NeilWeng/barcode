@@ -38,7 +38,7 @@ var btnSummit = document.getElementById("btnSummit");
 btnSummit.addEventListener("click", function (event) {
   var number = document.getElementById("typeNumber").value
   
-  if (number < 0 || number > 999999)
+  if (number.includes('.') || number < 0 || number > 999999)
   {
   	alert("無效的會員編號");
     return;
